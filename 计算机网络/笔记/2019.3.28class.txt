@@ -1,0 +1,52 @@
+以太网交换机的特点：
+	以太网交换机实质就是一个多接口网桥
+以太网交换机的交换方式：
+	直通方式：接收数据帧的同时就立即按数据帧的目的的MAC地址决定该帧的转发接口
+，因而提高帧的转发速度；缺点是他不检查差错直接把帧转发出来，因而可能也将一些无效帧转发
+个其他网站。
+
+
+集线器和交换机对带宽的占用情况
+虚拟局域网wlan是由一些局域网网段构成的、
+
+将用户模式且转到特权模式
+switch > enable
+将特权模式转到全局配置模式
+#conf t
+划分vlan
+`(config)#vlan 2
+退出当前模式并返回上一级
+（config-vlan）#exit
+进入某接口的配置模式
+（config）#interface gigabitethernet 6/1
+设置该接口访问的模式
+（config-if）#switchport access vlan 2
+
+exitv
+VLAN 虚拟局域网
+	并不是一种全新的局域网，而是局域网上一种服务
+	将物理位置确定不变
+
+100Base-T
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 2
+Switch(config-vlan)#exit
+Switch(config)#in
+Switch(config)#interface giga
+Switch(config)#interface gigabitEthernet 7/1
+Switch(config-if)#sw
+Switch(config-if)#switchport a
+Switch(config-if)#switchport access vlan 2
+Switch(config-if)#
+Switch#
+
+用户模式   switch>         
+特权模式   switch>enable  或直接用 en                        switch#     
+全局配置模式  switch# config terminal  或直接用 conf  t                              
+ switch（confif）#     
+接口模式   interface f0/1  或直接用inter f0/1     
+链路模式   sw1(config)#line console 0     
+数据库模式  Switch#vlan database  
+
+注意：按下Tab键可命令补全

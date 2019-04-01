@@ -1,0 +1,68 @@
+以太局域网：
+	概述
+		两个标准
+		共性：不可靠的，尽最大的努力交付
+	采用的拓扑结构
+		总线型（集线器	星型拓扑）
+	信道利用率（CSMA/CD）
+		理想信道利用率
+		 1/（1+τ/T0）（1）、传播距离不能太长	（2）、帧长不能太短
+
+MAC层
+	MAC地址：48位（计算机的标识符）
+	封装成帧：帧头帧尾~帧头占了14个字节、帧尾占了4个字节
+
+两种情况下
+
+使用集线器扩展局域网优点
+	使用原来不同碰撞的局域网上的计算机能够进行跨碰撞的通信
+	扩大局域网的覆盖范围
+
+网桥收到一个帧时，并不是向所有的接口废此帧，而是先检查此帧的目的MAC 地址，然后在确定
+将该帧转发到那个接口，或把它丢弃
+
+小结：
+扩展以太网
+	集线器扩展：跨碰撞域通信；形成更大的碰撞域
+	网桥扩展
+	交换机扩展
+	  交换表（MAC地址表）
+	  学习过程：基于源MAC地址学习
+	  转发过程：基于目的的MAC地址转发
+
+  <1-99>      Session number to resume
+  connect     Open a terminal connection
+  disable     Turn off privileged commands
+  disconnect  Disconnect an existing network connection
+  enable      Turn on privileged commands
+  exit        Exit from the EXEC
+  logout      Exit from the EXEC
+  ping        Send echo messages
+  resume      Resume an active network connection
+  show        Show running system information
+  telnet      Open a telnet connection
+  terminal    Set terminal line parameters
+  traceroute  Trace route to destination
+
+交换机生成树协议：
+增加*余链路生成协议~?增加冗余链路时，自学习的过程就可能导致以太网帧
+	在网 络的某个环路中无限制地兜圈子。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

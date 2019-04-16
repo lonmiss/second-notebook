@@ -1,0 +1,14 @@
+/*不应该出现标签*/
+    body{ 
+          font-size:16px;
+    }
+    li{
+           font-size:12px;
+          color:blue;
+     }
+    #new{
+           color:red; font-size: 80px;
+    }
+    .link1{
+        color:green;
+    }

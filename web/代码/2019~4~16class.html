@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>2019.4.6class</title>
+	<style type="text/css">
+		body{
+			background-color:#eee;
+			/*background-image:url(课堂图片/timg2.jpg);*/
+		}
+		p{
+			border:"center";
+			background-color:#ccc;
+			background-repeat:repeat-y;
+			background-position: center;
+			width:600px;
+			hight:200px;
+			border-color:blue;
+			border-size:2px;
+			border-style:solid;
+		}
+		.site{
+			fong-size:24px;
+			background-color:green;
+		}
+		#beautiful{
+			background-image:url(课堂图片/6.1.jpg);
+			font-family:"宋体";
+			font-size:30px;
+		}
+		#list{
+			/*list-style-type:square;//方块*/
+			/*设置图标*/
+			list-style-image:url(课堂图片/arrow2.png);
+		}
+	</style>
+</head>
+<body>
+	<h3>复习：
+		<ul>
+			<li>文本缩进：text-indent <br>
+				水平对齐：text-align~feft center right <br>
+				行高：line-height <br>
+				文本颜色：color <br>
+				文本修饰：text-decoration `none overline underline line-through(删除下划线)	~a元素默认有下划线，其他元素默认值为none<br>
+				字符转换：text-transform ~none uppercase(把所有的字母转换成大写) lowercase（把所有字母转换成小写） capitalize(只对每个单词的首字母大写)<br>
+			</li> 
+			<li>
+				未被访问超链接：a:link <br>
+				鼠标经过链接：a:hover<br>
+				链接被点击的那一刻：a:active<br>
+				访问的超链接：a:visited<br>
+			</li>
+			<li>
+				<h4>
+					伪类与CSS选择器结合使用，向某些元素添加特殊效果
+				</h4>
+				<table border="1" cellpadding="5" cellspacing="1">
+					<tr>
+						<th>伪类</th>
+						<th>描述</th>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">具体内容</td>
+					</tr>
+					<tr>
+						<td>:link</td>
+						<td>向未被访问的链接添加样式</td>
+					</tr>
+					<tr>
+						<td>：visited</td>
+						<td>向已被访问的链接添加样式</td>
+					</tr>
+					<tr>
+						<td>:hover</td>
+						<td>当鼠标悬浮在元素上方时，向元素添加样式</td>
+					</tr>
+					<tr>
+						<td>:active</td>
+						<td>向被激活的元素添加样式。</td>
+					</tr>
+					<tr>
+						<td>:focus</td>
+						<td>向拥有键盘输入焦点的元素添加样式。</td>
+					</tr>
+					<tr>
+						<td>:first-child</td>
+						<td>向元素的第一个子元素添加样式</td>
+					</tr>
+				</table>
+		</ul>
+	</h3>
+	<h2>
+		<ul>
+			<li>
+				<table border="1" cellpadding="2" cellspacing="2" align="center">
+					<tr align="center">
+						<th>值</th>
+						<th>描述</th>
+					</tr>
+					<tr align="center">
+						<td>repeat</td>
+						<td>默认。背景图片将在垂直和水平方向重复</td>
+					</tr>
+					<tr align="center">
+						<td>repeat-x</td>
+						<td>背景图片将在水平方向重复</td>
+					</tr>
+					<tr align="center">
+						<td>repeat-y</td>
+						<td><背景图片将在垂直方向重复/td>
+					</tr>
+					<tr align="center">
+						<td>no-repeat</td>
+						<td>背景图片只显示一次</td>
+					</tr>
+					<tr align="center">
+						<td>inherit</td>
+						<td>规定应该从父元素继承background-repeat设置属性</td>
+					</tr>
+				</table>
+			</li>
+			<li>
+				如果有CSS外部文件，一定要写CSS的相对的图片文件
+			</li>
+			<li>
+				背景图像的定位：background-position: 20px 100px
+												相对x轴和y轴;
+				<br>
+				<ol>也可以用关键词： <br>
+					单一关键字          等价和关键字 <br>
+					<li>center 			center center</li>
+					<li>top				top center或center top</li>
+					<li>bottom			bottom center或center right</li>
+					<li>right			right center或center right </li>
+					<li>left			left center或center left</li>
+					<li>如果仅规定一个关键词，那么第二个值是“center”</li>
+				</ol>
+				<p>也可以使用百分比来设置属性：0%  0%</p>
+			</li>
+			<li>
+				list-style-position:outside:图标在文字外面； <br>
+				list-style-position:inside:图标在文字里面；	
+			</li>
+
+		</ul>
+	</h2>
+	<p id="beautiful" align="center">
+		如果世界漆黑 其实我很美 	
+		<br>在爱情里面进退 最多被消费
+		<br>无关痛痒的是非
+		<br>又怎么不对 无所谓
+		<br>如果像你一样 总有人赞美
+		<br>围绕着我的卑微 也许能消退
+		<br>其实我并不在意 有很多机会
+		<br>像巨人一样的无畏
+		<br>放纵我 心里的鬼
+		<br>可是我不配
+		<br>丑八怪 能否别把灯打开
+		<br>我要的爱 出没在
+		<br>漆黑一片的舞台
+		<br>丑八怪 在这暧昧的时代
+		<br>我的存在 像意外
+		<br>有人用一滴泪 会红颜祸水
+		<br>有人丢掉称谓 什么也不会
+		<br>只要你足够虚伪 就不怕魔鬼 对不对
+		<br>如果剧本写好 谁比谁高贵
+		<br>我只能沉默以对 美丽本无罪
+		<br>当欲望开始贪杯 有更多机会
+		<br>像尘埃一样的无畏 化成灰 谁认得谁
+		<br>管他配不配
+		<br>丑八怪 能否别把灯打开
+		<br>我要的爱 出没在
+		<br>漆黑一片的舞台
+		<br>丑八怪 在这暧昧的时代
+		<br>我的存在 不意外
+		<br>丑八怪 其实见多就不怪
+		<br>放肆去high 用力踩
+		<br>那不堪一击的洁白
+		<br>丑八怪 这是我们的时代
+		<br>我不存在 才意外
+	</p>
+	<p class="site" align="center"><a href="#">丑八怪</a></p>
+	<ul id="list">水果种类~饿了~（设置列表）
+		<li>苹果</li>
+		<li>橘子</li>
+		<li>香蕉</li>
+		<li>杏</li>
+		<li>桃</li>
+	</ul>
+
+<hr/>
+
+<h1 align="center">第六章：盒子模型</h1>
+<ol>
+	<li>理解和子模型</li>
+	<li>掌握盒子模型的各项属性</li>
+	<li>理解行内元素、块级元素的概念</li>
+	<li>掌握盒子模型的应用</li>
+</ol>
+<p>
+	<ol>盒子在WEB中的作用
+		<li>页面内容的容器</li>
+		<li>通过盒子和盒子的镶嵌、堆叠，控制页面内容的展示位置</li>
+	</ol>
+	<p>***************</p>
+	<ol>每个盒子具有的特征
+		<li>大小（width height）~设置内容区域的高度和宽度</li>
+		<li>边框（border）</li>
+		<li>内边距（padding）</li>
+		<li>外边距（margin）</li>
+	</ol>
+	<img src="课堂图片/盒子.png" alt="盒子"/>
+	<ul>边框：border
+		<li>边框的宽度：border-width:5px;</li>
+		<li>边框的样式：border-style:solid;<br>
+		dotted(虚线)  solid（实线）</li>
+		<li>边框的颜色：border-color:red;</li>
+		<li>
+			<ol>
+				<li>border-top：上边框</li>
+				<li>border-right：右边框</li>
+				<li>border-bottom：下边框</li>
+				<li>border-left：左边框</li>
+			</ol>
+		</li>
+		<li>综合属性<br/>
+			border:width  	style 	color;
+		</li>
+	</ul>
+</p>
+
+</body>
+</html>
